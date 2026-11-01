@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GDG on Campus MMMUT | Build your future, brick by brick</title>
+    <meta
+      name="description"
+      content="A brick-built developer community at MMMUT Gorakhpur. Workshops, projects and events for every student."
+    />
+    <meta name="theme-color" content="#2c6bd6" />
+    <meta property="og:title" content="GDG on Campus MMMUT" />
+    <meta
+      property="og:description"
+      content="Workshops, projects and events for every student."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -16 72 72'%3E%3Cpath d='M19 8 7 20l12 12' fill='none' stroke='%232c6bd6' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='29' cy='20' r='4.5' fill='%23d23b30'/%3E%3Ccircle cx='43' cy='20' r='4.5' fill='%23ffc93c'/%3E%3Cpath d='m53 8 12 12-12 12' fill='none' stroke='%231f8a50' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="brick" viewBox="0 0 240 80">
+          <rect
+            x="22"
+            y="2"
+            width="36"
+            height="18"
+            rx="9"
+            fill="currentColor"
+          />
+          <rect
+            x="76"
+            y="2"
+            width="36"
+            height="18"
+            rx="9"
+            fill="currentColor"
+          />
+          <rect
+            x="130"
+            y="2"
+            width="36"
+            height="18"
+            rx="9"
+            fill="currentColor"
+          />
+          <rect
+            x="184"
+            y="2"
+            width="36"
+            height="18"
+            rx="9"
+            fill="currentColor"
+          />
+          <rect
+            x="22"
+            y="2"
+            width="36"
+            height="8"
+            rx="4"
+            fill="#fff"
+            opacity=".28"
+          />
+          <rect
+            x="76"
+            y="2"
+            width="36"
+            height="8"
+            rx="4"
+            fill="#fff"
+            opacity=".28"
+          />
+          <rect
+            x="130"
+            y="2"
+            width="36"
+            height="8"
+            rx="4"
+            fill="#fff"
+            opacity=".28"
+          />
+          <rect
+            x="184"
+            y="2"
+            width="36"
+            height="8"
+            rx="4"
+            fill="#fff"
+            opacity=".28"
+          />
+          <rect y="14" width="240" height="66" rx="8" fill="currentColor" />
+          <rect
+            y="66"
+            width="240"
+            height="14"
+            rx="7"
+            fill="#000"
+            opacity=".13"
+          />
+          <rect
+            x="8"
+            y="18"
+            width="224"
+            height="5"
+            rx="2.5"
+            fill="#fff"
+            opacity=".25"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div id="bar" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="brand" href="#home" aria-label="GDG on Campus MMMUT home">
+        <svg
+          viewBox="0 0 72 40"
+          width="46"
+          height="26"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M19 8 7 20l12 12"
+            fill="none"
+            stroke="#2c6bd6"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="29" cy="20" r="4.5" fill="#d23b30" />
+          <circle cx="43" cy="20" r="4.5" fill="#ffc93c" />
+          <path
+            d="m53 8 12 12-12 12"
+            fill="none"
+            stroke="#1f8a50"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span>GDG on Campus <b>MMMUT</b></span>
+      </a>
+      <nav id="menu" aria-label="Main">
+        <a href="#home">Home</a><a href="#about">About</a
+        ><a href="#projects">Projects</a><a href="#events">Events</a
+        ><a href="#contact">Contact</a
+        ><a class="menu-cta" href="#join">Join Community</a>
+      </nav>
+      <div class="actions">
+        <button
+          id="theme"
+          class="icon"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          ◐
+        </button>
+        <a class="btn solid sm" href="#join">Join Community</a>
+        <button
+          id="burger"
+          class="icon burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero studs-bg">
+        <div class="hero-text">
+          <p class="pill">
+            Google Developer Groups on Campus · MMMUT Gorakhpur
+          </p>
+          <h1>Build your future, one brick at a time.</h1>
+          <p class="lead">
+            We are students who learn to code by building real things together.
+            Snap into a workshop, join a project team and see what you can make
+            by the end of the semester.
+          </p>
+          <div class="cta-row">
+            <a class="btn solid" href="#join">Join the Community</a>
+            <a class="btn ghost" href="#events">Explore Events</a>
+          </div>
+        </div>
+        <svg
+          class="hero-art"
+          viewBox="0 0 360 300"
+          role="img"
+          aria-label="A stack of three colourful bricks labelled Learn, Build and Ship"
+        >
+          <g class="drop" style="--i: 2; color: #2fa866">
+            <use href="#brick" x="40" y="200" width="240" height="80" />
+            <text x="160" y="254" fill="#fff">Ship</text>
+          </g>
+          <g class="drop" style="--i: 1; color: #e04a3f">
+            <use href="#brick" x="80" y="136" width="240" height="80" />
+            <text x="200" y="190" fill="#fff">Build</text>
+          </g>
+          <g class="drop" style="--i: 0; color: #ffc93c">
+            <use href="#brick" x="52" y="72" width="240" height="80" />
+            <text x="172" y="126" fill="#3a2c00">Learn</text>
+          </g>
+        </svg>
+      </section>
+
+      <div class="topics" aria-hidden="true">
+        <div class="track" id="track"></div>
+      </div>
+
+      <section id="about" class="sec">
+        <h2>About the community</h2>
+        <div class="two">
+          <div class="about-text">
+            <p>
+              GDG on Campus MMMUT is a student-run group supported by Google
+              Developers. We turn curiosity about technology into skills,
+              projects and friendships.
+            </p>
+            <p>
+              <b>Our mission:</b> make learning to build software friendly,
+              practical and open to every branch and year.
+            </p>
+            <p>
+              <b>Our vision:</b> a campus where every student ships something
+              they are proud of.
+            </p>
+            <figure class="shot y" style="--c: #ffc93c">
+              <img
+                src="images/mmmut-main.jpg"
+                alt="The main administrative building of MMMUT Gorakhpur with palm trees and a green lawn in front"
+                width="900"
+                height="600"
+                loading="lazy"
+              />
+              <figcaption>Our home: MMMUT, Gorakhpur</figcaption>
+            </figure>
+          </div>
+          <div class="stage">
+            <h3>Build with us</h3>
+            <div
+              class="plate"
+              id="plate"
+              role="group"
+              aria-label="Brick baseplate"
+            ></div>
+            <div
+              class="palette"
+              id="palette"
+              role="group"
+              aria-label="Brick colours"
+            ></div>
+            <p class="hint">
+              Pick a colour, then click the studs to snap bricks in.
+            </p>
+          </div>
+        </div>
+        <ul class="benefits">
+          <li>
+            <b>Learn by doing</b>Hands-on workshops on web, mobile, cloud and
+            AI.
+          </li>
+          <li>
+            <b>Build a portfolio</b>Team projects you can show to recruiters.
+          </li>
+          <li>
+            <b>Find your people</b>Mentors, seniors and teammates in one place.
+          </li>
+        </ul>
+        <div class="stats">
+          <div class="tile">
+            <strong data-to="0" id="members">0</strong><span>members</span>
+          </div>
+          <div class="tile">
+            <strong data-to="24">0</strong><span>workshops</span>
+          </div>
+          <div class="tile">
+            <strong data-to="12">0</strong><span>projects</span>
+          </div>
+        </div>
+        <div class="campus">
+          <figure class="shot big" style="--c: #17703e">
+            <img
+              src="images/mmmut-path.jpg"
+              alt="A cobblestone path lined with palm trees leading towards the Central Library at MMMUT"
+              width="1000"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption>Where we meet: the Central Library lane</figcaption>
+          </figure>
+          <figure class="shot pano" style="--c: #2c6bd6">
+            <img
+              src="images/mmmut-lawn.jpg"
+              alt="Panoramic view of the green MMMUT lawns lined with palm trees"
+              width="754"
+              height="330"
+              loading="lazy"
+            />
+            <figcaption>The lawns after a workshop</figcaption>
+          </figure>
+          <figure class="shot night" style="--c: #d23b30">
+            <img
+              src="images/mmmut-night.jpg"
+              alt="The administrative block and the statue pavilion at MMMUT lit up at night with marigold flowers"
+              width="1100"
+              height="619"
+              loading="lazy"
+            />
+            <figcaption>Evening at the Administrative Block</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="projects" class="sec alt">
+        <h2>Our projects</h2>
+        <p class="note">
+          Projects and Workshops to upgrade your technical skills.
+        </p>
+        <div
+          class="chips"
+          id="filters"
+          role="group"
+          aria-label="Filter projects"
+        ></div>
+        <div class="grid" id="project-grid"></div>
+      </section>
+
+      <section id="events" class="sec">
+        <h2>Upcoming events</h2>
+        <p class="note">Get ready for the exciting upcoming events.</p>
+        <div class="grid" id="event-grid"></div>
+      </section>
+
+      <section id="voices" class="sec alt">
+        <h2>What members say</h2>
+        <p class="note">Testimonials from the trusted ones.</p>
+        <div class="quotes">
+          <figure class="quote" style="--c: #2c6bd6">
+            <blockquote>
+              I had never written a line of code. Three workshops later I
+              shipped my first app.
+            </blockquote>
+            <figcaption><b>Aarav S.</b>2nd year, Mechanical</figcaption>
+          </figure>
+          <figure class="quote" style="--c: #d23b30">
+            <blockquote>
+              My project team became my closest friends, and my portfolio
+              finally has real work in it.
+            </blockquote>
+            <figcaption><b>Neha K.</b>3rd year, Electronics</figcaption>
+          </figure>
+          <figure class="quote" style="--c: #1f8a50">
+            <blockquote>
+              Seniors reviewed my code and taught me how to ask better
+              questions. That changed everything.
+            </blockquote>
+            <figcaption><b>Rohan M.</b>1st year, Computer Science</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="faq" class="sec">
+        <h2>Questions, answered</h2>
+        <div class="faq">
+          <details>
+            <summary>Who can join?</summary>
+            <p>
+              Any MMMUT student from any branch or year. You do not need to know
+              how to code.
+            </p>
+          </details>
+          <details>
+            <summary>Is it free?</summary>
+            <p>Yes. Membership and all our workshops are free.</p>
+          </details>
+          <details>
+            <summary>How much time does it take?</summary>
+            <p>As little as one event a month. Do more when you want to.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="join" class="sec cta studs-bg">
+        <div>
+          <h2>Ready to snap in?</h2>
+          <p>
+            Fill in the form to join the community. We will email you about the
+            next event.
+          </p>
+          <p id="picked" class="picked" hidden></p>
+          <ol class="steps">
+            <li>Fill in the form</li>
+            <li>Pick an event you like</li>
+            <li>Show up and build something</li>
+          </ol>
+        </div>
+        <form id="form" novalidate>
+          <label
+            >Full name<input
+              name="name"
+              autocomplete="name"
+              maxlength="60"
+              required
+          /></label>
+          <label
+            >Email<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="100"
+              required
+          /></label>
+          <label
+            >I am interested in
+            <select name="interest">
+              <option>Web development</option>
+              <option>Mobile apps</option>
+              <option>AI and ML</option>
+              <option>Cloud</option>
+            </select>
+          </label>
+          <input
+            class="hp"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <button class="btn solid" type="submit">Join the Community</button>
+          <p id="msg" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div>
+        <strong class="flogo"
+          ><svg
+            viewBox="0 0 72 40"
+            width="40"
+            height="22"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M19 8 7 20l12 12"
+              fill="none"
+              stroke="#2c6bd6"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="29" cy="20" r="4.5" fill="#d23b30" />
+            <circle cx="43" cy="20" r="4.5" fill="#ffc93c" />
+            <path
+              d="m53 8 12 12-12 12"
+              fill="none"
+              stroke="#1f8a50"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          >GDG on Campus MMMUT</strong
+        >
+        <p>
+          A student developer community at Madan Mohan Malaviya University of
+          Technology, Gorakhpur.
+        </p>
+      </div>
+      <div>
+        <strong>Quick links</strong><a href="#about">About</a
+        ><a href="#projects">Projects</a><a href="#events">Events</a>
+      </div>
+      <div>
+        <strong>Connect</strong
+        ><a href="https://gdg.community.dev/" target="_blank" rel="noopener"
+          >GDG Community</a
+        ><a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+          >LinkedIn</a
+        ><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+      </div>
+      <p class="copy">
+        © 2026 GDG on Campus MMMUT. Brick-inspired prototype built for
+        Prompt2Pixel Round 2.
+      </p>
+    </footer>
+    <a href="#home" id="toTop" class="btn solid" aria-label="Back to top">↑</a>
+    <script src="script.js"></script>
+  </body>
+</html>
