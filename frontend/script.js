@@ -48,7 +48,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.cont
 document.addEventListener('click',e=>{if(menu.classList.contains('open')&&!menu.contains(e.target)&&!burger.contains(e.target))closeMenu()});
 function count(el,to){const t0=performance.now();(function f(n){const p=Math.min((n-t0)/1200,1);el.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f)})(t0)}
 const seen=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){seen.unobserve(e.target);count(e.target,+e.target.dataset.to)}}));
-fetch('/api/join').then(r=>r.json()).then(d=>{if(d.count)$('#members').dataset.to=d.count}).catch(()=>{$('#members').dataset.to=128}).finally(()=>document.querySelectorAll('[data-to]').forEach(el=>seen.observe(el)));
+fetch('https://gdg-project-backend.onrender.com').then(r=>r.json()).then(d=>{if(d.count)$('#members').dataset.to=d.count}).catch(()=>{$('#members').dataset.to=128}).finally(()=>document.querySelectorAll('[data-to]').forEach(el=>seen.observe(el)));
 $('#form').onsubmit=async e=>{
  e.preventDefault();const f=e.target,m=$('#msg'),d=Object.fromEntries(new FormData(f));d.event=picked;
  f.querySelectorAll('input').forEach(i=>i.classList.remove('bad'));
@@ -57,7 +57,7 @@ $('#form').onsubmit=async e=>{
  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)){m.className='err';m.textContent='Enter a valid email address.';return bad('email')}
  m.className='';m.textContent='Sending...';
  try{
-  const r=await fetch('/api/join',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
+  const r=await fetch('https://gdg-project-backend.onrender.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
   const j=await r.json();
   if(!r.ok){m.className='err';m.textContent=j.error;return}
   m.className='ok';m.textContent=j.message;f.reset();picked='';$('#picked').hidden=true;
